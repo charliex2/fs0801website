@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FoodScience:Notice</title>
+<link href="css/tittle.css" rel="stylesheet" type="text/css" />
+<style>
+h3 {
+	color: #FFF;
+	text-align: center
+}
+h4 {
+	color: #CCC;
+	text-align: center;
+	font: lighter
+}
+div {
+	color: #FFF;
+	width: 800px;
+	margin: 0px auto
+}
+hr {
+	width: 800px;
+	size: 1
+}
+</style>
+
+<!-- Include jQuery Library -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<!-- Let's do the animation -->
+<script type="text/javascript">
+	$(function() {
+		// set opacity to nill on page load
+		$("ul#menu span").css("opacity","0");
+		// on mouse over
+		$("ul#menu span").hover(function () {
+			// animate opacity to full
+			$(this).stop().animate({
+				opacity: 1
+			}, 'slow');
+		},
+		// on mouse out
+		function () {
+			// animate opacity to nill
+			$(this).stop().animate({
+				opacity: 0
+			}, 'slow');
+		});
+	});
+</script>
+</head>
+
+<body>
+<ul id="menu">
+  <li><a href="index.html" class="home"><span></span></a></li>
+  <li><a href="telbook.html" class="telbook"><span></span></a></li>
+  <li><a href="birthday.html" class="birthday"><span></span></a></li>
+  <li><a href="notice.html" class="notice"><span></span></a></li>
+  <li><a href="movie.html" class="movie"><span></span></a></li>
+</ul>
+<div class="notice">
+  <hr />
+  <h3>[2012.08.17]第一个通知</h3>
+  <p> 这是我们班级的网站，包括大家的联系方式，生日提醒，大家的照片还有视频等等。当然了，网站还在不断的完善当中哦。比如说通讯录还没有加密什么的。
+    大家有什么建议也可以提出来，发送到sendme@qq.com，小巨（收） </p>
+  <hr />
+  <h3>[2012.08.17]第二个通知</h3>
+  <p> 这是我们班级的网站，包括大家的联系方式，生日提醒，大家的照片还有视频等等。当然了，网站还在不断的完善当中哦。比如说通讯录还没有加密什么的。
+    大家有什么建议也可以提出来，发送到sendme@qq.com，小巨（收） </p>
+  <hr />
+</div>
+<!--
+</body>
+
+</html>
